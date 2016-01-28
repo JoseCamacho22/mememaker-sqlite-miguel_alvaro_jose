@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_cee55df9a99523a70648b07652e3d84ebc3dff13.jar" />
+    </item>
+    <item
+        jar="E:\Descargas\mememaker v4\mememaker\app\libs\commons-io-2.4.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\commons-io-2.4_caed3a9363bf3c42b3375cfe766f3a0005e4ada1.jar" />
+    </item>
+    <item
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3_aa16b3cf885393ef74ba8407c65bcf20627dd05b.jar" />
+    </item>
+    <item
+        jar="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="2c2071dcaf7a008c3b01a6381a33be55396bab09">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\com.android.support-support-v13-21.0.3_611cea7f501a477e3f289f106b8e2cddde94d31a.jar" />
+    </item>
+    <item
+        jar="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.3_851c88299726082d0f12aa68e616522f7d0d105b.jar" />
+    </item>
+    <item
+        jar="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.0"
+        sha1="0dcc55e70f7ebf7238fe2ec53f662eb378ab2668">
+        <dex dex="E:\Descargas\mememaker v4\mememaker\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_99e35728ea7559d2b1c5397494938e3cd0ed6a59.jar" />
+    </item>
+
+</items>

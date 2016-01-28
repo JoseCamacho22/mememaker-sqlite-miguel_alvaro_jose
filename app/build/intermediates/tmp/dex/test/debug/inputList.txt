@@ -1,0 +1,1 @@
+/Users/carlosfernandez/AndroidStudioProjects/mememaker/app/build/intermediates/classes/test/debug
