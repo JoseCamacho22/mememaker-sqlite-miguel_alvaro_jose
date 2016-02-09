@@ -21,13 +21,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
+import es.tessier.mememaker.R;
 import es.tessier.mememaker.adapters.MemeItemListAdapter;
+import es.tessier.mememaker.database.MemeDatasource;
 import es.tessier.mememaker.models.Meme;
 import es.tessier.mememaker.models.MemeAnnotation;
 import es.tessier.mememaker.ui.activities.CreateMemeActivity;
 import es.tessier.mememaker.ui.activities.MemeSettingsActivity;
 import es.tessier.mememaker.utils.FileUtilities;
-import es.tessier.mememaker.R;
 
 
 public class MemeItemFragment extends ListFragment {
@@ -142,5 +143,13 @@ public class MemeItemFragment extends ListFragment {
         }
 
         return workingBitmap;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+// Actualizo la vista para mostrar los memes
+        MemeDatasource memeDatasource=new MemeDatasource(getActivity());
+
     }
 }
