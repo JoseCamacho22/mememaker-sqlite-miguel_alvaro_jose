@@ -1,14 +1,26 @@
 [
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\create_meme.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\create_meme.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/menu/image_list.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/menu/image_list.xml"
     },
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\meme_list.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\meme_list.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\create_meme.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\create_meme.xml"
     },
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\image_list.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\image_list.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\meme_list.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\meme_list.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/menu/meme_list.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/menu/meme_list.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/menu/create_meme.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/menu/create_meme.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\menu\\image_list.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\menu\\image_list.xml"
     }
 ]

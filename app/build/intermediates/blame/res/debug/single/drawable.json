@@ -1,10 +1,18 @@
 [
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\meme_list_selector.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\drawable\\meme_list_selector.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/drawable/meme_list_selector.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/drawable/meme_list_selector.xml"
     },
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_color_selector.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\drawable\\grid_color_selector.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/drawable/grid_color_selector.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/drawable/grid_color_selector.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\meme_list_selector.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\drawable\\meme_list_selector.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\grid_color_selector.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\drawable\\grid_color_selector.xml"
     }
 ]

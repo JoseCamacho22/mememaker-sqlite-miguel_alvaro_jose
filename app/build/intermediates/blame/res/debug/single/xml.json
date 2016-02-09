@@ -1,6 +1,10 @@
 [
     {
-        "merged": "E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\xml\\preferences.xml"
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "/Users/Jose/AndroidStudioProjects/mememaker-sqlite-miguel_alvaro_jose/E:\\Descargas\\mememaker v4\\mememaker\\app\\src\\main\\res\\xml\\preferences.xml"
     }
 ]
