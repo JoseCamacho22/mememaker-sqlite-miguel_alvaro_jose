@@ -8,14 +8,12 @@ import android.util.Log;
 
 
 
-/**
- * Created by Evan Anger on 8/17/14.
- */
+
 public class MemeSQLiteHelper extends SQLiteOpenHelper {
 
     //Meme Table
     public final static String DB_NAME = "memes.db";
-    public final static int DB_VERSION = 1;
+    public final static int DB_VERSION = 2;
     public final static String TAG = MemeSQLiteHelper.class.getName();
 
 
@@ -32,8 +30,8 @@ public class MemeSQLiteHelper extends SQLiteOpenHelper {
             MemeContract.AnnotationsEntry.COLUMN_X + " INTEGER NOT NULL," +
             MemeContract.AnnotationsEntry.COLUMN_Y + " INTEGER NOT NULL," +
             MemeContract.AnnotationsEntry.COLUMN_COLOR + " INTEGER NOT NULL, " +
-            "FOREIGN KEY (" + MemeContract.AnnotationsEntry.COLUMN_ID + ") " +    // Nombre del atributo de ESTA TABLA que hace de Foreign Key
-            " REFERENCES MEME(" + MemeContract.MemesEntry.COLUMN_ID + ") );"; // REFERENCES la otra tabla y entre parentesis a que columna de dicha tabla
+            "FOREIGN KEY (" + MemeContract.AnnotationsEntry.COLUMN_ID + ") " +    //  Foreign Key de esta  tabla
+            " REFERENCES MEME(" + MemeContract.MemesEntry.COLUMN_ID + ") );"; //  hace referencia a la otra tabla.
 
 
    public static final String ALTER_ADD_CREATE_DATE ="ALTER TABLE "+ MemeContract.MemesEntry.TABLE_NAME +

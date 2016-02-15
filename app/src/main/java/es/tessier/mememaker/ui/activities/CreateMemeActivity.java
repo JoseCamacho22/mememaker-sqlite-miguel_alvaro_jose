@@ -18,12 +18,13 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import java.util.ArrayList;
+
+import es.tessier.mememaker.R;
+import es.tessier.mememaker.database.MemeDatasource;
 import es.tessier.mememaker.models.Meme;
 import es.tessier.mememaker.models.MemeAnnotation;
 import es.tessier.mememaker.ui.views.MemeImageView;
-import es.tessier.mememaker.R;
-
-import java.util.ArrayList;
 
 public class CreateMemeActivity extends Activity {
 
@@ -168,11 +169,20 @@ public class CreateMemeActivity extends Activity {
         mMemeTexts.add(editText);
     }
 
+
     private void saveMeme() {
         for (int i = 0; i < mMemeTexts.size(); i++) {
             EditText editText = mMemeTexts.get(i);
             MemeAnnotation annotation = mCurrentMeme.getAnnotations().get(i);
             annotation.setTitle(editText.getText().toString());
         }
+
+        MemeDatasource datasource = new MemeDatasource(this);
+        if (mCurrentMeme.getId() != -1){
+            datasource.update(mCurrentMeme);
+        }else {
+            datasource.create(mCurrentMeme);
+        }
+
     }
 }
