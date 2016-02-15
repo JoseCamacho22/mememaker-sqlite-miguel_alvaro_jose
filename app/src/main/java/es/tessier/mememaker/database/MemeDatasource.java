@@ -182,7 +182,7 @@ public class MemeDatasource {
         database.beginTransaction();
 
         // Recojo el meme a actualizar
-        
+
         ContentValues updateMemeValues = new ContentValues();
         updateMemeValues.put(MemeContract.MemesEntry.COLUMN_NAME, meme.getName());
 
