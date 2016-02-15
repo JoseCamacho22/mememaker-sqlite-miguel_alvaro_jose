@@ -73,7 +73,7 @@ public class MemeDatasource {
 
                 memes.add(meme);
             }
-            // Mientras haya siguiente
+          
             while (cursor.moveToNext());
         }
 
