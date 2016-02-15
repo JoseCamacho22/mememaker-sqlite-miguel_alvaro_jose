@@ -149,7 +149,10 @@ public class MemeItemFragment extends ListFragment {
     public void onResume() {
         super.onResume();
 // Actualizo la vista para mostrar los memes
-        MemeDatasource memeDatasource=new MemeDatasource(getActivity());
+        MemeDatasource memeDatasource = new MemeDatasource(this.getActivity());
 
     }
-}
+
+
+    }
+

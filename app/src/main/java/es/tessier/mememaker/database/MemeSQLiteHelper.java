@@ -11,16 +11,40 @@ import android.util.Log;
 /**
  * Created by Evan Anger on 8/17/14.
  */
-public class MemeSQLiteHelper extends SQLiteOpenHelper{
+public class MemeSQLiteHelper extends SQLiteOpenHelper {
 
     //Meme Table
-    public final static String DB_NAME="memes.db";
-    public final static int DB_VERSION=1;
-    public final static String TAG="Error";
-    public MemeSQLiteHelper(Context context){
-        super(context,DB_NAME,null,DB_VERSION);
+    public final static String DB_NAME = "memes.db";
+    public final static int DB_VERSION = 1;
+    public final static String TAG = MemeSQLiteHelper.class.getName();
 
+
+    public static final String CREATE_TABLE_MEMES = "CREATE TABLE " + MemeContract.MemesEntry.TABLE_NAME + " ( " +
+            MemeContract.MemesEntry.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            MemeContract.MemesEntry.COLUMN_ASSET + " TEXT NOT NULL," +
+            MemeContract.MemesEntry.COLUMN_NAME + " TEXT NOT NULL," +
+            MemeContract.MemesEntry.COLUMN_CREATE_DATE + " INTEGER );";
+
+
+    static final String CREATE_TABLE_ANNOTATIONS = "CREATE TABLE " + MemeContract.AnnotationsEntry.TABLE_NAME + " ( " +
+            MemeContract.AnnotationsEntry.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            MemeContract.AnnotationsEntry.COLUMN_TITLE + " TEXT NOT NULL," +
+            MemeContract.AnnotationsEntry.COLUMN_X + " INTEGER NOT NULL," +
+            MemeContract.AnnotationsEntry.COLUMN_Y + " INTEGER NOT NULL," +
+            MemeContract.AnnotationsEntry.COLUMN_COLOR + " INTEGER NOT NULL, " +
+            "FOREIGN KEY (" + MemeContract.AnnotationsEntry.COLUMN_ID + ") " +    // Nombre del atributo de ESTA TABLA que hace de Foreign Key
+            " REFERENCES MEME(" + MemeContract.MemesEntry.COLUMN_ID + ") );"; // REFERENCES la otra tabla y entre parentesis a que columna de dicha tabla
+
+
+   public static final String ALTER_ADD_CREATE_DATE ="ALTER TABLE "+ MemeContract.MemesEntry.TABLE_NAME +
+            " ADD COLUMN "+ MemeContract.MemesEntry.COLUMN_CREATE_DATE+ " INTEGER ;";
+
+
+    public MemeSQLiteHelper(Context context) {
+
+        super(context, DB_NAME, null, DB_VERSION);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -28,41 +52,20 @@ public class MemeSQLiteHelper extends SQLiteOpenHelper{
         try {
             db.execSQL(CREATE_TABLE_MEMES);
             db.execSQL(CREATE_TABLE_ANNOTATIONS);
-        }catch (SQLException e){
-            Log.e(TAG,"Android SQLEXCEPTION caught"+e);
+        } catch (SQLException e) {
+            Log.e(TAG, "Android SQLEXCEPTION caught" + e);
         }
     }
 
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        switch (oldVersion) {
+            case 1:
+                db.execSQL(ALTER_ADD_CREATE_DATE);
+        }
     }
+}
 
 
     //Meme Table Annotations functionality
-    static final String MEMES_TABLE="MEMES";
-    static final String COLUMN_MEMES_ASSET="asset";
-    static final String COLUMN_MEMES_NAME="name";
-    static final String COLUMN_MEMES_ID="_id";
-
-
-    static final String ANNOTATION_TABLE="ANNOTATIONS";
-    static final String COLUMN__ID="_id";
-    static final String COLUMN_TITLE="title";
-    static final int COLUMN_X=0;
-    static final int COLUMN_Y=0;
-    static final int COLUMN_COLOR=0;
-    static final String CREATE_TABLE_MEMES="CREATE TABLE"+MEMES_TABLE+"("+
-            COLUMN_MEMES_ID+"INTEGER PRIMARY KEY AUTOINCREMENT"+
-            COLUMN_MEMES_ASSET+"TEXT NOT NULL"+
-            COLUMN_MEMES_NAME+"TEXT NOT NULL)";
-
-
-
-    static final String CREATE_TABLE_ANNOTATIONS="CREATE TABLE"+ANNOTATION_TABLE+"("+
-            COLUMN__ID+"INTEGER PRIMARY KEY AUTOINCREMENT"+
-            COLUMN_TITLE+"TEXT NOT NULL"+
-            COLUMN_X+"INTEGER NOT NULL" +
-            COLUMN_Y+"INTEGER NOT NULL"+
-            COLUMN_COLOR+"INTEGER NOT NULL FOREIGN KEY"+")";
-}
