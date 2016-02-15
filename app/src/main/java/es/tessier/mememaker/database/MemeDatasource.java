@@ -73,7 +73,7 @@ public class MemeDatasource {
 
                 memes.add(meme);
             }
-          
+
             while (cursor.moveToNext());
         }
 
@@ -175,12 +175,14 @@ public class MemeDatasource {
         return cursor.getString(columnIndex);
     }
 
+
     public void update(Meme meme) {
 
         SQLiteDatabase database = openWriteable();
         database.beginTransaction();
 
         // Recojo el meme a actualizar
+        
         ContentValues updateMemeValues = new ContentValues();
         updateMemeValues.put(MemeContract.MemesEntry.COLUMN_NAME, meme.getName());
 
