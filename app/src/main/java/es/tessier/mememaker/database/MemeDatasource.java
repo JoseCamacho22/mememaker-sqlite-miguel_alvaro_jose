@@ -58,8 +58,10 @@ public class MemeDatasource {
                 null, // selection Args
                 null, //Group by
                 null, // Having
-                MemeContract.MemesEntry.COLUMN_CREATE_DATE + " DESC"
+                MemeContract.MemesEntry.COLUMN_CREATE_DATE + " DESC" //order By
         );
+
+
         ArrayList<Meme> memes = new ArrayList<>();
 
         // En caso de que se haya devuelto al menos un valor
@@ -136,7 +138,8 @@ public class MemeDatasource {
 
         memeValues.put(MemeContract.MemesEntry.COLUMN_NAME, meme.getName());
         memeValues.put(MemeContract.MemesEntry.COLUMN_ASSET, meme.getAssetLocation());
-        memeValues.put(MemeContract.MemesEntry.COLUMN_CREATE_DATE, new Date().getTime());
+
+        memeValues.put(MemeContract.MemesEntry.COLUMN_CREATE_DATE,new Date().getTime());
 
 
         long memeId = database.insert(MemeContract.MemesEntry.TABLE_NAME, null, memeValues);

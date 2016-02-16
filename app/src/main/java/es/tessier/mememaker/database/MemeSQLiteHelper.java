@@ -34,9 +34,9 @@ public class MemeSQLiteHelper extends SQLiteOpenHelper {
             " REFERENCES MEME(" + MemeContract.MemesEntry.COLUMN_ID + ") );"; //  hace referencia a la otra tabla.
 
 
-   public static final String ALTER_ADD_CREATE_DATE ="ALTER TABLE "+ MemeContract.MemesEntry.TABLE_NAME +
-            " ADD COLUMN "+ MemeContract.MemesEntry.COLUMN_CREATE_DATE+ " INTEGER ;";
-
+///crearemos una constante llamada ALTER_ADD_CREATE_DATE
+    public static final String ALTER_ADD_CREATE_DATE ="ALTER TABLE "+MemeContract.MemesEntry.TABLE_NAME +
+            " ADD COLUMN "+ MemeContract.MemesEntry.COLUMN_CREATE_DATE+ "INTEGER ;";
 
     public MemeSQLiteHelper(Context context) {
 
@@ -57,13 +57,15 @@ public class MemeSQLiteHelper extends SQLiteOpenHelper {
 
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        switch (oldVersion) {
-            case 1:
-                db.execSQL(ALTER_ADD_CREATE_DATE);
-        }
+
+public void onUpgrade (SQLiteDatabase db, int oldVersion, int newVersion){
+
+    switch (oldVersion){
+        case 1:
+            db.execSQL(ALTER_ADD_CREATE_DATE);
     }
+}
 }
 
 
-    //Meme Table Annotations functionality
+
